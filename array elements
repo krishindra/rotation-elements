@@ -1,0 +1,17 @@
+n=int(input())
+a=input().split()
+print('Before Rotation:')
+for i in a:
+    print(i,end=' ')
+b=int(input())
+c=input().split()
+d,e=c
+d=int(d)
+e=int(e)
+for i in range(d,e):
+    t=a[e]
+    a.remove(a[e])
+    a.insert(d,t)
+print('\nAfter Rotation:')
+for i in a:
+    print(i,end=' ')
